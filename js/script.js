@@ -9,7 +9,7 @@ button.addEventListener('click', function(){
 var paragraph = document.getElementById('joke');
 
 function getJoke() {
-    var xhr = new XMLHttpRequest();
+    var xhr = new XMLHttpsRequest();
     xhr.open('GET', url);
     xhr.addEventListener('load', function(){
       var response = JSON.parse(xhr.response);
