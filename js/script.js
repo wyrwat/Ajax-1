@@ -9,6 +9,7 @@ button.addEventListener('click', function(){
 var paragraph = document.getElementById('joke');
 
 function getJoke() {
+    var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url);
     xhr.addEventListener('load', function(){
