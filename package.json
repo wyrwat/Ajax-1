@@ -33,6 +33,7 @@
     "onchange": "^5.2.0"
   },
   "dependencies": {
-    "all": "0.0.0"
+    "all": "0.0.0",
+    "xmlhttprequest": "^1.8.0"
   }
 }
