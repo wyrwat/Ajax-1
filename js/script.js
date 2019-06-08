@@ -6,10 +6,11 @@ button.addEventListener('click', function(){
   getJoke();
 });
 
-var paragraph = document.getElementById('joke');
+var lowKick = "Chuck Norris is unable to connect to server ";
+var paragraph = document.getElementById('joke') || lowKick;
 
 function getJoke() {
-    var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+    
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url);
     xhr.addEventListener('load', function(){
