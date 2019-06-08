@@ -10,7 +10,6 @@ var lowKick = "Chuck Norris is unable to connect to server ";
 var paragraph = document.getElementById('joke') || lowKick;
 
 function getJoke() {
-    
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url);
     xhr.addEventListener('load', function(){
