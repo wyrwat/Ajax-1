@@ -13,7 +13,7 @@ function getJoke() {
     xhr.open('GET', url);
     xhr.addEventListener('load', function(){
       var response = JSON.parse(xhr.response);
-      paragraph.innerHTML =  "Chuck Norris is unable to connect to server ";
+      paragraph.innerHTML = response.value.joke || "Chuck Norris is unable to connect to server ";
     });
     xhr.send();
   }
