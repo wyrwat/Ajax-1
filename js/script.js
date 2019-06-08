@@ -7,7 +7,7 @@ button.addEventListener('click', function(){
 });
 
 var lowKick = "Chuck Norris is unable to connect to server ";
-var paragraph = document.getElementById('joke') || lowKick;
+var paragraph =  lowKick;
 
 function getJoke() {
     var xhr = new XMLHttpRequest();
